@@ -1,11 +1,16 @@
 .footer {
-  min-height: 200px;
+  min-height: 100px;
+  font-size: 0.8rem;
   background: #ECECEC;
   overflow: hidden;
 
   .footer--block {
-    a {
+    .title {
       color: $colortheme;
+
+      a {
+        color: $colortheme;
+      }
 
       span {
         font-weight: bold;
@@ -14,7 +19,13 @@
 
     .by {
       a {
-        color: #515151;
+        color: #8b8b8b;
+        font-weight: bold;
+        transition-duration: 0.3s;
+        &:hover
+        {
+          color: #515151;
+        }
       }
     }
   }

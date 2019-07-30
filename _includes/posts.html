@@ -2,7 +2,7 @@
   {% if site.posts.size == 0 %}
   <h2>No post found</h2>
   {% else %}
-  
+
   {% for post in site.posts %}
   <a href="{{ site.baseurl }}{{ post.url }}" class="list-item container" data-aos="fade-up" data-aos-offset="0" data-aos-delay="100">
 
@@ -22,8 +22,7 @@
       </div>
 
       <div class="list-post-written" data-aos="fade-up" data-aos-delay="700" data-aos-offset="0">
-        <small>Written by <span>{{ post.by }}</span>-</small>
-        <small><time>{{ post.date | date_to_string }}</time></small>
+        <small>작성 : <span>{{ post.by }}</span>, <time>{{ post.date | date: '%Y년 %m월 %d일' }}</time></small>
       </div>
     </div>
 

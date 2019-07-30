@@ -11,7 +11,7 @@ title: "프로젝트 가이드"
 email: sudo.skkuvr@gmail.com
 description: "성균관대학교 VR/AR 동아리 자체 가이드라인 페이지입니다."
 baseurl: "/guide"
-url: "https://skkuvr.github.io"
+url: "https://skku-vrar.github.io"
 color_theme:  "#178600"
 color_text:  "#fff"
 language:  "ko"

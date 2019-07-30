@@ -6,23 +6,22 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: "Help Center"
-email: gusquinalha@gmail.com
-description: "Simple and flexible Jekyll theme for help center."
-baseurl: "/jekyll-help-center-theme"
-url: "http://quinalha.me"
-twitter_username: "gustavoquinalha"
-github_username:  "gustavoquinalha"
-color_theme:  "#0081ff"
+name: "SKKU VR/AR"
+title: "프로젝트 가이드"
+email: sudo.skkuvr@gmail.com
+description: "성균관대학교 VR/AR 동아리 자체 가이드라인 페이지입니다."
+baseurl: "/guide"
+url: "https://skkuvr.github.io"
+color_theme:  "#178600"
 color_text:  "#fff"
-language:  "en"
+language:  "ko"
 
 # Build settings
 markdown: kramdown
 permalink: /:title/
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 paginate: 5
-
-# Plugins
-plugins_dir:
-  - jekyll-admin
+exclude:
+  - .npmrc
+  - package.json
+  - yarn.lock

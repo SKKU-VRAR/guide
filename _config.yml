@@ -6,7 +6,8 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-name: "SKKU VR/AR"
+name: "SKKU VR/AR | 프로젝트 가이드"
+group: "SKKU VR/AR"
 title: "프로젝트 가이드"
 email: sudo.skkuvr@gmail.com
 description: "성균관대학교 VR/AR 동아리 자체 가이드라인 페이지입니다."

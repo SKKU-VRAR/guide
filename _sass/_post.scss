@@ -1,3 +1,18 @@
+.post-title {
+  * {
+    vertical-align: middle;
+  }
+
+  img {
+    height: 1em;
+    margin-right: 10px;
+  }
+}
+
+.post-date {
+  font-size: 0.8em;
+}
+
 .content-post {
   min-height: calc(100vh - 480px);
   background: #f3f5f7;
@@ -38,6 +53,9 @@
       padding-right: 20px;
       font-size: 2rem;
       color: $colortheme;
+      img {
+        width: 80%;
+      }
     }
 
     .list-post-title {

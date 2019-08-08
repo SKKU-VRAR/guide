@@ -1,0 +1,20 @@
+<div class="margin-top-20 margin-bottom-20">
+  <div class="list-item-2-container" data-aos="fade-up" data-aos-delay="0" data-aos-offset="0">
+    <div class="list-item-2 container wrap-reverse align-items-end justify-content-center">
+      {% if include.content.image %}
+        <div  class="list-item-2-img flex-basis-300 flex-grow-1 margin-right-20"
+              data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
+          <img src="{{ include.content.image | prepend: '/assets/img/' | prepend: site.baseurl | absolute_path }}" width="100%" alt="">
+        </div>
+      {% endif %}
+      <div class="list-post-content flex-basis-400 flex-grow-5">
+        <h2 class="list-post-title" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
+          {{ include.content.question | markdownify }}
+        </h2>
+        <div class="list-post-description" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
+          {{ include.content.answer | markdownify }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

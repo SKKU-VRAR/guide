@@ -70,7 +70,6 @@
     .list-post-written {
       span {
         font-weight: bold
-
       }
     }
 
@@ -85,10 +84,6 @@
   padding: 40px;
   transition: .3s;
 
-  .list-post-title {
-    transition: .3s;
-  }
-
   &:hover {
     border-color: $colortheme;
     .list-post-title {
@@ -96,8 +91,40 @@
     }
   }
 
+  .list-post-title {
+    transition: .3s;
+
+    * {
+      margin-top: 0;
+    }
+  }
+
+  .list-post-description {
+    p {
+      margin: 0;
+    }
+    p + p {
+      margin: 20px 0 0;
+    }
+
+    li {
+      margin-left: 40px;
+    }
+
+    ul, ol {
+      margin-bottom: 20px;
+    }
+
+    code, pre {
+      font-size: 0.9em;
+      font-family: 'Consolas', monospace;
+      background: #eee;
+      border-radius: 4px;
+      padding: 4px;
+    }
+  }
+
   .list-item-2-img {
-    margin-right: 20px;
       @media screen and (max-width: 839px) {
         margin-right: 0;
         margin-top: 20px;

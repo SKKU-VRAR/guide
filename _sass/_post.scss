@@ -37,6 +37,7 @@
 .list-item {
   padding: 20px;
   border: 1px solid #C1C1C1;
+  color: black;
   border-radius: 4px;
   transition: .3s;
   cursor: pointer;
@@ -46,6 +47,7 @@
 
     &:hover {
       border-color: $colortheme;
+      text-decoration: none;
     }
 
     .list-item-icon {
@@ -84,20 +86,14 @@
   padding: 40px;
   transition: .3s;
   font-size: 0.8em;
+  color: black;
 
   &:hover {
     border-color: $colortheme;
-    .list-post-title {
-      color: $colortheme;
-    }
   }
 
-  .list-post-title {
-    transition: .3s;
-
-    * {
-      margin-top: 0;
-    }
+  .list-post-title * {
+    margin-top: 0;
   }
 
   .list-post-description {
@@ -112,8 +108,27 @@
       margin-left: 40px;
     }
 
+    li + li {
+      margin-top: 5px;
+    }
+
     ul, ol {
-      margin-bottom: 20px;
+      margin: 10px 0;
+    }
+
+    .footnotes {
+      border-top: 1px solid #ddd;
+      margin-top: 10px;
+      padding-top: 10px;
+
+      ol {
+        font-size: 0.8em;
+        margin-bottom: 0;
+
+        li {
+          margin-top: -$menuheight;
+        }
+      }
     }
 
     code, pre {

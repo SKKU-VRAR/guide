@@ -28,3 +28,14 @@ sup {
 sub {
   bottom: -0.25em;
 }
+
+article [id], article [name] {
+  padding-top: $menuheight;
+  margin-top: -$menuheight;
+}
+
+.blank-anchor {
+  display: block;
+  height: 60px;
+  margin: -60px 0 0;
+}

@@ -13,13 +13,6 @@
   font-size: 0.8em;
 }
 
-.page-anchor {
-  display: block;
-  position: relative;
-  top: -$menuheight;
-  visibility: hidden;
-}
-
 .content-post {
   min-height: calc(100vh - 480px);
   background: #f3f5f7;

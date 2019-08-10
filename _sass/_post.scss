@@ -124,6 +124,20 @@
       }
     }
 
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      th {
+        background: rgb(237, 244, 255);
+      }
+
+      th, td {
+        border: 1px solid #ddd;
+        padding: 0.25em;
+      }
+    }
+
     li {
       margin-left: 40px;
     }

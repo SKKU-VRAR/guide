@@ -92,16 +92,36 @@
     border-color: $colortheme;
   }
 
+  *:last-child {
+    margin-bottom: 0;
+  }
+
   .list-post-title * {
     margin-top: 0;
   }
 
   .list-post-description {
-    p {
-      margin: 0;
+    & > *:first-child {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      &[id] {
+        margin-top: -$menuheight;
+      }
+
+      &::before {
+        content: "\a0\a0↪\a0\a0";
+        color: #bbb;
+        font-weight: normal;
+      }
     }
-    p + p {
-      margin: 20px 0 0;
+
+    & > * + * {
+      margin: 1.2em 0 0;
+
+      &[id] {
+        margin-top: calc(1.2em - #{$menuheight});
+      }
     }
 
     li {
@@ -112,8 +132,9 @@
       margin-top: 5px;
     }
 
-    ul, ol {
-      margin: 10px 0;
+    li > ul, li > ol {
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
 
     .footnotes {
@@ -127,6 +148,11 @@
 
         li {
           margin-top: -$menuheight;
+
+          & > * {
+            margin-top: 5px;
+            margin-bottom: 0;
+          }
         }
       }
     }
@@ -138,12 +164,32 @@
       border-radius: 4px;
       padding: 4px;
     }
+
+    details {
+      font-size: 0.8em;
+      margin-left: 20px;
+      transition: 0.3s;
+
+      summary {
+        font-size: 1.25em;
+        font-weight: bold;
+        margin-left: -20px;
+      }
+
+      &[open] summary {
+        margin-bottom: 10px;
+      }
+
+      & > ul, & > ol {
+        margin-left: -20px;
+      }
+    }
   }
 
   .list-item-2-img {
-      @media screen and (max-width: 839px) {
-        margin-right: 0;
-        margin-top: 20px;
-      }
-   }
+    @media screen and (max-width: 839px) {
+      margin-right: 0;
+      margin-top: 20px;
+    }
+  }
 }

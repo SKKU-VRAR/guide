@@ -231,7 +231,3 @@ questions:
 
 {% assign question = page.questions[2] %}
 {% include question.html content=question %}
-
-위와 같이 순서를 바꿀 수 있습니다.
-
-같은 질문을 여러 번 넣을 수도, 질문을 아예 내용에서 제외할 수도 있습니다. [위쪽으로](#q1)

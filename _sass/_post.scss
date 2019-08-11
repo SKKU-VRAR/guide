@@ -110,9 +110,18 @@
       }
 
       &::before {
-        content: "\a0\a0↪\a0\a0";
+        content: "\a0\e93f\a0";
         color: #bbb;
+        font-family: 'featherIcons' !important;
         font-weight: normal;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
     }
 
@@ -181,13 +190,16 @@
 
     details {
       font-size: 0.8em;
-      margin-left: 20px;
-      transition: 0.3s;
+      padding-left: 20px;
+
+      &[open] {
+        border-left: 1px solid #ddd;
+      }
 
       summary {
         font-size: 1.25em;
         font-weight: bold;
-        margin-left: -20px;
+        margin-left: -16px;
       }
 
       &[open] summary {

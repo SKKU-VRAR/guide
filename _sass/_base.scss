@@ -28,9 +28,12 @@ body {
 }
 
 a {
-  color: #1a191b;
+  color: #3e98ff;
   text-decoration: none;
-  transition: .3s;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 h1,
@@ -66,7 +69,7 @@ h6 {
 }
 
 p {
-  margin: 0 0 1rem;
+  margin: 0 0 1em;
 }
 
 img {

@@ -1,31 +1,33 @@
 <div class="">
   {% if site.posts.size == 0 %}
-  <h2>No post found</h2>
+  <h2>포스팅을 찾을 수 없습니다.</h2>
   {% else %}
 
   {% for post in site.posts %}
-  <a href="{{ site.baseurl }}{{ post.url }}" class="list-item container" data-aos="fade-up" data-aos-offset="0" data-aos-delay="100">
+  <div class="list-item-container" data-aos="fade-up" data-aos-offset="0" data-aos-delay="100">
+    <a href="{{ site.baseurl }}{{ post.url }}" class="list-item container">
 
-    <div class="list-item-icon container align-items-center justify-content-center">
-      <span class="feather-icon icon-{{post.icon}}" data-aos="fade-right" data-aos-offset="0" data-aos-delay="500"></span>
-    </div>
-
-    <div class="flex-grow-1">
-      <div class="" data-aos="fade-up" data-aos-delay="600" data-aos-offset="0">
-        <h2 class="list-post-title">
-        {{ post.title }}
-        </h2>
+      <div class="list-item-icon container align-items-center justify-content-center" data-aos="fade-right" data-aos-offset="0" data-aos-delay="500">
+        <img src="{{ post.icon | prepend: '/assets/img/' | prepend: site.baseurl | absolute_path }}" data-aos="fade-right" data-aos-offset="0" data-aos-delay="500">
       </div>
 
-      <div class="" data-aos="fade-up" data-aos-delay="700" data-aos-offset="0">
-        <span class="list-post-description">{{ post.description }}</span>
+      <div class="flex-grow-1">
+        <div class="" data-aos="fade-up" data-aos-delay="600" data-aos-offset="0">
+          <h2 class="list-post-title">
+          {{ post.title }}
+          </h2>
+        </div>
+
+        <div class="" data-aos="fade-up" data-aos-delay="700" data-aos-offset="0">
+          <span class="list-post-description">{{ post.description }}</span>
+        </div>
+
+        <div class="list-post-written" data-aos="fade-up" data-aos-delay="700" data-aos-offset="0">
+          <small>작성 : <span>{{ post.by }}</span>, <time>{{ post.date | date: '%Y년 %m월 %d일' }}</time></small>
+        </div>
       </div>
 
-      <div class="list-post-written" data-aos="fade-up" data-aos-delay="700" data-aos-offset="0">
-        <small>작성 : <span>{{ post.by }}</span>, <time>{{ post.date | date: '%Y년 %m월 %d일' }}</time></small>
-      </div>
-    </div>
-
-  </a>
+    </a>
+  </div>
   {% endfor %} {% endif %}
 </div>

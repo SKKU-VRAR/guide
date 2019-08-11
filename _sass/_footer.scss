@@ -5,12 +5,8 @@
   overflow: hidden;
 
   .footer--block {
-    .title {
+    a {
       color: $colortheme;
-
-      a {
-        color: $colortheme;
-      }
 
       span {
         font-weight: bold;

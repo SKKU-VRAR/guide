@@ -51,7 +51,7 @@ questions:
               굳이 오픈소스 활동이 없더라도, GitHub 프로필은 <strong>포트폴리오</strong>로 활용될 수 있습니다. 최근에는 개발자 포트폴리오를 GitHub 프로필 링크로 대체하는 경우도 있습니다. Git 및 GitHub 경험은 사실상 필수라고 여기며, 여러분의 원격 저장소를 둘러보는 것이 <strong>여러분의 실력을 확인하는 가장 쉽고 직관적인 방법</strong>이기 때문입니다.
             </p>
             <p>
-              특히 <a href="https://pages.github.com/">GitHub Pages</a>를 통해 웹 사이트 형태의 포트폴리오를 제작하거나, 블로그를 운영하는 등의 작업을 비교적 손쉽게 만들 수 있습니다. 이 사이트 또한 GitHub Pages로 만들어 졌습니다.
+              특히 <a href="https://pages.github.com/">GitHub Pages</a>를 통해 웹 사이트 형태의 포트폴리오를 제작하거나, 블로그를 운영하는 등의 작업을 비교적 손쉽게 할 수 있습니다. 이 사이트 또한 GitHub Pages로 만들어 졌습니다.
             </p>
           </li>
         </ul>
@@ -208,19 +208,6 @@ questions:
         - 버전 21 이전: 터미널에서 `yum install git`를 실행하세요.
 
       [^1]: Git-2.22.0-64-bit.exe 설치 파일 기준입니다. 달라진 점이 있다면 알려주세요!
-
-  - question: 질문 3
-    answer: |-
-      ### 이 문장은 질문 3에 대한 답변입니다.
-
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    image: 3.gif
-  - question: 질문 4
-    answer: |-
-      * 이 문장은 질문 4에 대한 답변입니다.
-
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    image: 4.gif
 ---
 
 {% assign question = page.questions[0] %}

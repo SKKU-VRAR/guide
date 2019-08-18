@@ -11,6 +11,7 @@
 
 .post-date {
   font-size: 0.8em;
+  margin-bottom: 1em;
 }
 
 .content-post {
@@ -180,12 +181,40 @@
       }
     }
 
-    code, pre {
-      font-size: 0.9em;
-      font-family: 'Consolas', monospace;
-      background: #eee;
-      border-radius: 4px;
-      padding: 4px;
+    .collapsible {
+      font-size: 1em;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      font-family: inherit;
+
+$img_url: $baseurl + '/assets/img/arrow.svg';
+
+      &::before {
+        display: inline-block;
+        content: url($img_url);
+        width: 0.8em;
+        height: 0.8em;
+        transition: all 0.2s ease-out;
+      }
+
+      &.active::before {
+        transform: rotate(90deg);
+      }
+
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    .collapsible-content {
+      font-size: 0.8em;
+      padding-left: 20px;
+      border-left: 1px solid #ddd;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      margin: 0;
     }
 
     details {

@@ -69,7 +69,7 @@ h6 {
 }
 
 p {
-  margin: 0 0 1em;
+  margin: 0 0 0.8em;
 }
 
 img {
@@ -88,4 +88,12 @@ img {
 .min-height {
   min-height: calc(100vh - 80px - 200px);
   padding-top: 20px;
+}
+
+code, pre {
+  font-size: 0.9em;
+  font-family: 'Consolas', monospace;
+  background: #eee;
+  border-radius: 4px;
+  padding: 4px;
 }

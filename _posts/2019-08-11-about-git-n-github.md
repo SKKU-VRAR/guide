@@ -81,7 +81,7 @@ questions:
 
             설치 후에도 <code>PATH</code> 환경변수를 직접 수정하여 설정을 변경할 수 있습니다.
 
-        2. **SSH 프로그램 설정**: [PUTTY](https://www.putty.org/) 등을 사용하는 경우, Git에 내장된 OpenSSH 기반 클라이언트를 대신하여 사용할 수 있습니다. Git에서 SSH 클라이언트는 원격 저장소 작업 등에 사용됩니다.
+        2. **SSH 프로그램 설정**: [PuTTY](https://www.putty.org/) 등을 사용하는 경우, Git에 내장된 OpenSSH 기반 클라이언트를 대신하여 사용할 수 있습니다. Git에서 SSH 클라이언트는 원격 저장소 작업 등에 사용됩니다.
 
             별도의 프로그램을 지정하는 경우 `GIT_SSH`와 `SVN_SSH` 환경 변수를 수정하며, Git은 이 변수가 지정하는 실행 파일을 이용하게 됩니다. 변수가 존재하지 않는 경우, Git 내장 클라이언트를 사용하게 됩니다.
         3. **SSL/TLS 라이브러리 설정**: HTTPS 통신에서 인증서 유효성 검증에 쓰일 라이브러리를 선택합니다. 기본적으로는 OpenSSL을 사용하여 Git에 내장된 `ca-bundle.crt` 파일을 허용된 인증 기관 목록으로 취급합니다. 옵션을 통해 Windows 네이티브 보안 채널 라이브러리를 이용할 수도 있는데, 이 경우 기본적으로 Windows 인증서 저장소를 통해 인증서를 허용하며, 내부망을 통한 인증서 검증을 할 수도 있습니다.
@@ -135,7 +135,7 @@ questions:
 ---
 
 {% assign question = page.questions[0] %}
-{% include question.html content=question id="q1" %}
+{% include question.html content=question %}
 
 {% assign question = page.questions[1] %}
 {% include question.html content=question %}

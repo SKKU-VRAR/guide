@@ -129,12 +129,7 @@ questions:
 
       #### 3. Linux
 
-      배포판이 다양한 만큼 설치 방법도 다릅니다. 여기서는 대표적인 버전에 대해서만 서술하며, 정확한 정보는 [이 페이지](https://git-scm.com/download/linux)에서 확인하시기 바랍니다.
-
-      * **Debian/Ubuntu**: 터미널에서 `apt-get install git`를 실행하세요.
-      * **Fedora**
-        - 버전 22 이후: 터미널에서 `dnf install git`를 실행하세요.
-        - 버전 21 이전: 터미널에서 `yum install git`를 실행하세요.
+      일반적으로 패키지 관리자를 통해 설치합니다. 예를 들어, **Ubuntu/Debian**의 경우 **`sudo apt-get install git`** 커맨드를 사용합니다. 그러나 배포판에 따라 커맨드가 달라질 수 있으므로 정확한 정보는 [여기서](https://git-scm.com/download/linux) 확인하시기 바랍니다.
 
       [^1]: Git-2.22.0-64-bit.exe 설치 파일 기준입니다. 달라진 점이 있다면 알려주세요!
 ---

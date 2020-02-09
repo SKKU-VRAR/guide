@@ -57,7 +57,7 @@ bundle install
 bundle exec jekyll serve
 ```
 
-웹 브라우저를 통해 `localhost:4000/guide`에 접속하면 페이지를 볼 수 있습니다. (단, 자신의 컴퓨터에서만 볼 수 있습니다.)
+웹 브라우저를 통해 `localhost:4000/guide/`에 접속하면 페이지를 볼 수 있습니다. (단, 자신의 컴퓨터에서만 볼 수 있습니다.)
 
 ## 라이센스
 

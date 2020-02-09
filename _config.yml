@@ -23,6 +23,4 @@ permalink: /:title/
 plugins: [jekyll-paginate]
 paginate: 5
 exclude:
-  - .npmrc
-  - package.json
-  - yarn.lock
+  - preview.png

@@ -24,3 +24,4 @@ plugins: [jekyll-paginate]
 paginate: 5
 exclude:
   - preview.png
+  - how-to-fork.png

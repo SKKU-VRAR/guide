@@ -186,6 +186,8 @@
       background: #eee;
       border-radius: 4px;
       padding: 4px;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
     }
 
     details {

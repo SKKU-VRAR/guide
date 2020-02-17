@@ -67,7 +67,6 @@ bundle exec jekyll serve
 * [황준원](https://github.com/nuxlear)
 * [황선홍](https://github.com/Worldeditory)
 * [배준휘](https://github.com/BJH9750)
-* [한종렬](https://github.com/Orb-H)
 
 이 사이트에 추가적으로 필요한 내용이나 수정할 사항 등이 있는 경우, 다음의 방법을 사용해주시기 바랍니다.
 

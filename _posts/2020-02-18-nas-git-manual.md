@@ -178,6 +178,13 @@ questions:
       [^1]: 혹시 자신의 운영체제에 맞지 않는 설치 파일(또는 링크)이 주어진다면, 버튼 아래의 링크를 통해서 자신의 운영체제에 맞는 설치 파일을 고를 수 있습니다.
       [^2]: Linux의 경우 쉘에서 작동하는 Hamachi가 설치됩니다. command가 불편한 경우에는 Hamachi 설치 후 [Haguichi](https://www.haguichi.net/download/)를 설치해서 GUI로 하마치를 관리할 수 있습니다. Haguichi는 Windows나 MAC 버전의 Hamachi와 UI가 유사하기 때문에 Haguichi를 어떻게 사용하는지에 대한 설명은 [Windows + Other Hamachi GUI 사용법](#windows-hamachi)을 참조해주세요.
       [^3]: 보통 %HOMEPATH%는 `C:\Users\(user name)`입니다.
+  
+  - question: NAS에 새로운 repo는 어떻게 만드나요?
+    answer: |-
+
+      #### 아직 방법은 없습니다.
+
+      repo 생성은 git 서버가 해줄 수 있는 내용이 아닙니다. git repo 생성은 폴더를 하나 만들고, 그 폴더 안에서 `git --bare init` 커맨드를 이용하여 원격 저장소로 사용함을 git 서버 프로그램에 알려야 합니다. 그 이후 일반 사용자가 git 명령어를 이용하여 접근할 수 있게 됩니다. 이 이슈에 대해 많은 고민을 했었는데요, 마치 Github처럼 NAS에 있는 git 서버를 위한 웹 페이지를 만들까 합니다. 사이트가 생성되면 이 내용은 사이트에서 repo를 만드는 방법, 그 외에도 사이트에서 할 수 있는 것에 대한 내용으로 채워질 예정입니다.
 
   - question: NAS에서 clone한 repo는 NAS에서만 작업해야하나요?
     answer: |-
@@ -363,4 +370,7 @@ questions:
 {% include question.html content=question %}
 
 {% assign question = page.questions[5] %}
+{% include question.html content=question %}
+
+{% assign question = page.questions[6] %}
 {% include question.html content=question %}
